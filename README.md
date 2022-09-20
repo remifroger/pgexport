@@ -1,5 +1,7 @@
 # pgexport
 
+Version : Python 3.10.X
+
 Exporte dans un dossier des tables en provenance de PostgreSQL.
 
 Nécessite l'installation de QGIS (ogr2ogr).
