@@ -22,8 +22,8 @@ if not os.path.exists(QGISBINPATH):
     print('Le chemin vers les binaires QGIS n\'existe pas (exemple : C:\Program Files\QGIS X.XX\bin)')
     exit()
 
-outputDir  = sys.argv[2]
-with open(sys.argv[1]) as f:
+outputDir  = sys.argv[1]
+with open('export.txt') as f:
     conf = f.read().splitlines() 
 
 os.chdir(QGISBINPATH)

@@ -11,13 +11,13 @@ Remplir les variables d'environnement (.env) et le fichier export.txt, avec une 
 ## Usage
 
 ```
-python main.py export.txt "path\to\dir"
+python main.py "path\to\dir"
 ```
 
 Par exemple, la commande ci-dessous va exporter l'ensemble des tables PostgreSQL du fichier export.txt dans le dossier tests (C:\Users\frog\OneDrive - Projet\data\tests).
 
 ```
-python main.py export.txt "C:\Users\frog\OneDrive - Projet\data\tests"
+python main.py "C:\Users\frog\OneDrive - Projet\data\tests"
 ```
 
 Attention, bien veiller à mettre le chemin du dossier entre guillemets.
