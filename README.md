@@ -1,23 +1,23 @@
-# pgimport
+# pgexport
 
-Importe dans une base un schéma d'une BDD PostgreSQL l'ensemble des fichiers CSV et SHP d'un dossier.
+Exporte dans un dossier des tables en provenance de PostgreSQL.
 
-Nécessite l'installation de QGIS (ogr2ogr) et PostgreSQL (psql).
+Nécessite l'installation de QGIS (ogr2ogr).
 
 ## Pré-requis
 
-Remplir les variables d'environnement (.env).
+Remplir les variables d'environnement (.env) et le fichier export.txt, avec une ligne par table que vous souhaitez exporter (selon le format schema.table ou schema."table 1").
 
 ## Usage
 
 ```
-python main.py "path\to\dir" schema
+python main.py export.txt "path\to\dir"
 ```
 
-Par exemple, la commande ci-dessous va importer l'ensemble des CSV et SHP du dossier tests (C:\Users\frog\OneDrive - Projet\data\tests) dans le schéma "schema_import".
+Par exemple, la commande ci-dessous va exporter l'ensemble des tables PostgreSQL du fichier export.txt dans le dossier tests (C:\Users\frog\OneDrive - Projet\data\tests).
 
 ```
-python main.py "C:\Users\frog\OneDrive - Projet\data\tests" schema_import
+python main.py export.txt "C:\Users\frog\OneDrive - Projet\data\tests"
 ```
 
 Attention, bien veiller à mettre le chemin du dossier entre guillemets.
