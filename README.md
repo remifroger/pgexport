@@ -1,6 +1,6 @@
 # pgexport
 
-Version : Python 3.10.X
+Versions : testé sur Python 2.7.X et Python 3.10.X
 
 Exporte dans un dossier des tables en provenance de PostgreSQL.
 
