@@ -2,7 +2,7 @@
 
 Versions : testé sur Python 2.7.X et Python 3.10.X
 
-Exporte dans un dossier des tables en provenance de PostgreSQL.
+Exporte en CSV et SHP des tables PostgreSQL.
 
 Nécessite l'installation de QGIS (ogr2ogr).
 
@@ -16,7 +16,7 @@ Remplir les variables d'environnement (.env) et le fichier export.txt, avec une 
 python main.py "path\to\dir"
 ```
 
-Par exemple, la commande ci-dessous va exporter l'ensemble des tables PostgreSQL du fichier export.txt dans le dossier tests (C:\Users\frog\OneDrive - Projet\data\tests).
+Par exemple, la commande ci-dessous va exporter en CSV et SHP l'ensemble des tables PostgreSQL du fichier export.txt dans le dossier tests (C:\Users\frog\OneDrive - Projet\data\tests).
 
 ```
 python main.py "C:\Users\frog\OneDrive - Projet\data\tests"
